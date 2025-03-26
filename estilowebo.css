@@ -28,8 +28,15 @@ header, section, article, footer {
   vertical-align: top; /* Alineación del texto en la parte superior */
 }
 
+/* Cambiar color de las palabras en el encabezado y artículo a azul */
 header {
   background-color: rgba(245, 245, 245, 0.7); /* Fondo transparente para el header */
+  color: blue; /* Texto azul para el encabezado */
+}
+
+article {
+  color: blue; /* Texto azul para el artículo */
+  border-bottom: none;
 }
 
 footer {
@@ -66,9 +73,4 @@ footer {
 
 .footer-menu a:hover {
   color: #007bff; /* Color al pasar el ratón sobre el enlace */
-}
-
-/* Opcional: eliminar el borde inferior en el último elemento si se desea */
-article {
-  border-bottom: none;
 }
