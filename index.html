@@ -3,8 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estructura HTML5</title>
-<link rel="stylesheet" href="estilowebo.css">
+  <title>Mi Página</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Fondo de página gris más claro y eliminación de márgenes */
+    body {
+      background-color: #f5f5f5; /* Gris más claro */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Cambiado para que se acerque más a la parte superior */
+      min-height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente utilizada aquí */
+    }
+
+    /* Contenedor centrado al 70% con borde de 2px y esquinas redondeadas */
+    .container {
+      width: 90%;
+      border: 4px solid #000;
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+      box-sizing: border-box;
+      border-radius: 15px; /* Esquinas redondeadas */
+    }
+
+    /* Estilos para cada sección */
+    header, section, article, footer {
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente para las secciones */
+      text-align: left; /* Alineación del texto a la izquierda */
+      vertical-align: top; /* Alineación del texto en la parte superior */
+    }
+
+    /* Cambiar color de las palabras en el encabezado y artículo a azul */
+    header h1 {
+      color: blue; /* Cambiar color de "Encabezado" a azul */
+    }
+
+    article h2 {
+      color: blue; /* Cambiar color de "Artículo" a azul */
+    }
+
+    footer {
+      background-color: rgba(245, 245, 245, 0.7); /* Fondo transparente para el footer */
+      border-bottom: none;
+      padding: 10px 0; /* Espaciado adicional en el pie de página */
+    }
+
+    /* Estilos del menú en el pie de página */
+    .footer-menu {
+      list-style-type: none; /* Eliminar los puntos de la lista */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Alineación horizontal al centro */
+      align-items: center; /* Alineación vertical al centro */
+    }
+
+    .footer-menu li {
+      margin: 0 15px; /* Espaciado entre los elementos */
+    }
+
+    .footer-menu a {
+      text-decoration: none; /* Eliminar subrayado */
+      color: #000; /* Color del texto */
+      font-weight: bold;
+    }
+
+    .footer-menu li:not(:last-child)::after {
+      content: "|"; /* Barra vertical entre los elementos */
+      margin-left: 15px; /* Espaciado entre la palabra y la barra */
+      margin-right: 15px; /* Espaciado entre la barra y la siguiente palabra */
+    }
+
+    .footer-menu a:hover {
+      color: #007bff; /* Color al pasar el ratón sobre el enlace */
+    }
+
+    /* Opcional: eliminar el borde inferior en el último elemento si se desea */
+    article {
+      border-bottom: none;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -12,20 +93,21 @@
       <h1>Encabezado</h1>
     </header>
     <section>
-      <article>
-        <h2>Artículo</h2>
-        <p>Contenido del artículo...</p>
-      </article>
+      <p>Contenido de la sección.</p>
     </section>
+    <article>
+      <h2>Artículo</h2>
+      <p>Contenido del artículo.</p>
+    </article>
     <footer>
-  <ul class="footer-menu">
-    <li><a href="#">Uno</a></li>
-    <li><a href="#">Dos</a></li>
-    <li><a href="#">Tres</a></li>
-    <li><a href="#">Cuatro</a></li>
-    <li><a href="#">Cinco</a></li>
-  </ul>
-</footer>
+      <ul class="footer-menu">
+        <li><a href="#">Uno</a></li>
+        <li><a href="#">Dos</a></li>
+        <li><a href="#">Tres</a></li>
+        <li><a href="#">Cuatro</a></li>
+        <li><a href="#">Cinco</a></li>
+      </ul>
+    </footer>
   </div>
 </body>
 </html>
