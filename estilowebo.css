@@ -24,6 +24,8 @@ header, section, article, footer {
   padding: 20px;
   border-bottom: 1px solid #ccc;
   background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente para las secciones */
+  text-align: left; /* Alineación del texto a la izquierda */
+  vertical-align: top; /* Alineación del texto en la parte superior */
 }
 
 header {
