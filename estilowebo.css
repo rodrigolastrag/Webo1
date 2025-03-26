@@ -33,6 +33,37 @@ header {
 footer {
   background-color: rgba(245, 245, 245, 0.7); /* Fondo transparente para el footer */
   border-bottom: none;
+  padding: 10px 0; /* Espaciado adicional en el pie de página */
+}
+
+/* Estilos del menú en el pie de página */
+.footer-menu {
+  list-style-type: none; /* Eliminar los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Alineación horizontal al centro */
+  align-items: center; /* Alineación vertical al centro */
+}
+
+.footer-menu li {
+  margin: 0 15px; /* Espaciado entre los elementos */
+}
+
+.footer-menu a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: #000; /* Color del texto */
+  font-weight: bold;
+}
+
+.footer-menu li:not(:last-child)::after {
+  content: "|"; /* Barra vertical entre los elementos */
+  margin-left: 15px; /* Espaciado entre la palabra y la barra */
+  margin-right: 15px; /* Espaciado entre la barra y la siguiente palabra */
+}
+
+.footer-menu a:hover {
+  color: #007bff; /* Color al pasar el ratón sobre el enlace */
 }
 
 /* Opcional: eliminar el borde inferior en el último elemento si se desea */
